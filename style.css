@@ -1,0 +1,97 @@
+:root {
+    font-size: 62.5%;
+
+    --accent-color: hsl(131, 57%, 21%);
+    --border-color: hsl(0, 0%, 55%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+#gallery {
+    flex-grow: 1;
+    flex-basis: 40vw;
+    background-color: var(--accent-color);
+}
+
+#signup {
+    flex-grow: 1;
+    flex-basis: 60vw;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 120px 56px 56px 56px;
+}
+
+#form-wrapper {
+    border: 1px solid var(--border-color);
+    margin: 56px 0;
+    padding: 56px;
+    box-shadow: 0px 0px 5px var(--border-color);
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    width: 64%;
+}
+
+.input-wrapper {
+    margin-top: 32px;
+    flex-grow: 1;
+    flex-basis: 48%;
+    min-width: fit-content;
+}
+
+label {
+    display: block;
+    white-space: nowrap;
+}
+
+input {
+    width: 80%;
+    height: 36px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+button {
+    margin-left: 56px;
+    width: 220px;
+    height: 52px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#have-account {
+    margin-left: 56px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
