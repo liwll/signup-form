@@ -133,7 +133,7 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-    h3, form, label, input, .button-wrapper, #have-account {
+    h3, #pseudoform, label, input, .button-wrapper, #have-account {
         margin-left: auto;
         margin-right: auto;
     }
