@@ -1,8 +1,10 @@
 :root {
     font-size: 62.5%;
 
-    --accent-color: hsl(131, 57%, 21%);
+    --accent-color: hsl(316, 47%, 80%);
+    --subaccent-color: hsl(210, 98%, 74%);
     --border-color: hsl(0, 0%, 55%);
+    --logo-color: hsl(0, 0%, 0%, 0.2);
 }
 
 * {
@@ -24,8 +26,23 @@ body {
 #gallery {
     flex-grow: 1;
     flex-basis: 40vw;
-    background-color: var(--accent-color);
     min-height: 15vh;
+    background-color: var(--accent-color);
+    background-image: url("https://images.pexels.com/photos/4151484/pexels-photo-4151484.jpeg?auto=compress&cs=tinysrgb&w=3072&h=4608");
+    background-size: cover;
+    background-position-y: center;
+}
+
+#logo {
+    position: relative;
+    top: 20%;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    background-color: var(--logo-color);
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 #signup {
@@ -40,10 +57,10 @@ h2 {
 }
 
 #form-wrapper {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--accent-color);
     margin: 56px 0;
     padding: 56px;
-    box-shadow: 0px 0px 5px var(--border-color);
+    box-shadow: 0px 0px 5px var(--accent-color);
     font-size: 1.2rem;
 }
 
