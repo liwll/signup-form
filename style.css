@@ -71,7 +71,7 @@ h3 {
     padding-bottom: 20px;
 }
 
-form {
+#pseudoform {
     display: flex;
     flex-wrap: wrap;
     column-gap: 4%;
@@ -129,7 +129,7 @@ input {
 
 a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--subaccent-color);
 }
 
 @media only screen and (max-width: 800px) {
