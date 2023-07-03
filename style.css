@@ -24,6 +24,7 @@ body {
 }
 
 #gallery {
+    position: relative;
     flex-grow: 1;
     flex-basis: 40vw;
     min-height: 15vh;
@@ -43,6 +44,19 @@ body {
     font-size: 3.6rem;
     font-weight: 600;
     text-align: center;
+}
+
+#photo-creds {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#photo-creds a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #signup {
@@ -129,7 +143,7 @@ input {
     margin-bottom: 80px;
 }
 
-a {
+#have-account a {
     text-decoration: none;
     color: var(--subaccent-color);
 }
@@ -138,5 +152,9 @@ a {
     h3, #pseudoform, label, input, .button-wrapper, #have-account {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #photo-creds {
+        display: none;
     }
 }
